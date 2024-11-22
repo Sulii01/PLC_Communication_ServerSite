@@ -1,0 +1,81 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1000px;
+}
+
+#procIntChart {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 14px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    transition: all ease 0.3s;
+}
+
+a:nth-child(6) button{
+    width: 100px;
+    height: 37px;
+    padding: 0;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.button-group .start-stop form input[type=submit] {
+    padding: 10px 15px;
+    font-size: 14px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#procIntDisplay{
+    display: none;
+}
+
+button p{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    margin: 0;
+}

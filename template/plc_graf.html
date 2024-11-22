@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graf PLC v daném čase</title>
+    <link rel="stylesheet" href="/static/css/plc_graf.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/static/js/plc_graf.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Graf čtený aktuálně z DB</h1>
+        <span id="grafValueDisplay"></span>
+        <canvas id="grafValueChart"></canvas>
+        <a href="history.html"><button>Graf z CSV</button></a>
+        <a href="index.html"><button>Home</button></a>
+        <a href="graf.html"><button>Graf pribyvajici</button></a>
+    </div>
+</body>
+</html>

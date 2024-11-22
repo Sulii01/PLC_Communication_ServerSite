@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLC Monitoring</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/static/js/script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>PLC Parametry</h1>
+        <div class="form-group">
+            <div class="input-cont">
+                <input id="myIntInput" name='"Web2Plc".myInt' type="text" placeholder="Vložte hodnotu" />
+                <button id="saveButton">Uložit</button>
+            </div>
+            <div class="slider">
+                <input id="myIntSlider" name='"Web2Plc".myInt' type="range" min="0" max="100" value="0" orient="vertical" />
+            </div>
+        </div>
+        <div class="hodnoty">
+            <p>Aktuální zadaná hodnota: <span id="myIntDisplay"></span></p>
+            <p>Aktuální vyčtená hodnota: <span id="procIntDisplay"></span></p>
+        </div>
+        <div class="button-group">
+            <button id="startButton">START</button>
+            <button id="stopButton">STOP</button>
+            <div class="status-indicator" id="statusIndicator">
+            </div>
+        </div>
+        <div class="button-graf">
+            <a href="graf.html"><button>Graf pribyvajici</button></a>
+            <a href="history.html"><button>Graf z CSV</button></a>
+            <a href="plc_graf.html"><button><p>Graf z DB</p></button></a>
+        </div>
+    </div>
+</body>
+</html>

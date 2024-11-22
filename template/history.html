@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historie grafů</title>
+    <link rel="stylesheet" href="/static/css/history.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="/static/js/history.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Graf z CSV</h1>
+        <input id="graphDate" style="cursor: pointer;" readonly>
+        <div class="chart-container">
+            <div class="navigation">
+                <button id="prevDate"><</button>
+            </div>
+            <canvas id="historyChart"></canvas>
+            <div class="navigation">
+                <button id="nextDate">></button>
+            </div>
+        </div>
+        <div class="tlacitka">
+            <a href="graf.html"><button>Graf pribyvajici</button></a>
+            <a href="index.html"><button>Home</button></a>
+            <a href="plc_graf.html"><button><p>Graf z DB</p></button></a>
+        </div>
+    </div>
+</body>
+</html>

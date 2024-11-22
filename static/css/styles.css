@@ -1,0 +1,165 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 450px;
+    max-width: 500px;
+    position: relative;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 150px;
+    text-align: center;
+}
+
+input[type="range"] {
+    writing-mode: bt-lr; /* IE */
+    -webkit-appearance: slider-vertical; /* WebKit */
+    width: 8px;
+    height: 150px;
+    padding: 0 5px;
+    margin-left: 20px;
+}
+
+button {
+    padding: 10px 10px;
+    font-size: 14px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    transition: ease-in 0.3s;
+}
+
+.button-graf a:nth-child(3) button{
+    padding: 0;
+    width: 100px;
+    height: 37px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.button-group .start-stop form input[type=submit] {
+    padding: 10px 15px;
+    font-size: 14px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.input-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-group .start-stop form input[type=submit]:hover {
+    background-color: #0056b3;
+}
+
+p {
+    font-size: 18px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.hodnoty {
+    text-align: center;
+}
+
+.button-group {
+    display: flex;
+    margin-left: 45px;
+    justify-content: center;
+    margin-top: 20px;
+    align-content: center;
+    align-items: center;
+}
+
+.button-graf{
+    display: flex;
+    margin-right: 25px;
+    justify-content: center;
+}
+
+.start-stop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+    gap: 30px;
+}
+
+#stopButton, #startButton {
+    height: 45px;
+    width: 100px;
+}
+
+#statusIndicator p {
+    display: none;
+}
+
+.status-indicator {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 15px;
+    background-color: red;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+button p{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    margin: 0;
+}

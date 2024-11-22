@@ -1,0 +1,110 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1200px; /* Zvětšíme max-width pro větší graf */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px; /* Margin pro tlačítka */
+}
+
+#historyChart {
+    display: block;
+    width: 100%;
+    max-width: 1000px; /* Omezíme šířku grafu */
+    height: auto;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 14px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    transition: all ease 0.3s;
+}
+
+a:nth-child(3) > button{
+    width: 100px;
+    height: 37px;
+    padding: 0;
+}
+
+.navigation button{
+    padding: 5px;
+    font-size: 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+    margin: 5px;
+    width: 30px;
+    transition: all ease 0.3s;
+}
+
+.navigation button:hover{
+    background-color: #0056b3;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#graphDate {
+    font-weight: bold;
+}
+
+.flatpickr-day.has-records {
+    background-color: #007bff;
+    color: #000000;
+}
+
+button p{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    margin: 0;
+}
